@@ -33,7 +33,7 @@ const mono = localFont({
 // guess. Falls back to the production domain placeholder for local builds.
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://stocks-portfolio-report.vercel.app");
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://stocks-portfolio-spain.vercel.app");
 
 const SHARED_TITLE = "Stocks Portfolio Report · Informes de IRPF";
 const SHARED_DESCRIPTION =

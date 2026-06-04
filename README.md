@@ -7,8 +7,7 @@
 [![PWA](https://img.shields.io/badge/PWA-ready-2eb39a)](https://web.dev/progressive-web-apps/)
 [![Deploy on Vercel](https://img.shields.io/badge/deploy-vercel-black?logo=vercel)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Feaceto%2Fstocks-portfolio-report)
 
-> 🌐 **Demo en producción**: <https://stocks-portfolio-report.vercel.app>
-> _(la URL se actualiza al primer deploy en Vercel)_
+> 🌐 **Demo en producción**: <https://stocks-portfolio-spain.vercel.app/>
 
 Aplicación web (PWA) que genera los informes necesarios para la **declaración de IRPF** a partir de un extracto de operaciones de una cartera de valores. Para **cada año** del archivo y **cada cuenta** calcula ventas con **FIFO** (ganancia/pérdida), dividendos, gastos de custodia y posiciones a la fecha, con la trazabilidad completa de cada venta (primera y última fecha de adquisición, nº de lotes consumidos), aplica la **regla de los 2 meses** (art. 33.5.f) y la **compensación de pérdidas entre ejercicios** (art. 49, hasta 4 años).
 

@@ -5,6 +5,7 @@ import type { IrpfReport, EngineSettings } from "@stocks-portfolio-irpf/engine";
 import { DEFAULT_SETTINGS } from "@stocks-portfolio-irpf/engine";
 import { ResultsView } from "@/components/ResultsView";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { WelcomeModal } from "@/components/WelcomeModal";
 
 type Status = "idle" | "working" | "done" | "error";
 
@@ -167,6 +168,7 @@ export default function Page() {
 
   return (
     <main className="wrap">
+      <WelcomeModal />
       <header className="masthead">
         <div>
           <div className="kicker">cartera de valores · declaración de la renta </div>
