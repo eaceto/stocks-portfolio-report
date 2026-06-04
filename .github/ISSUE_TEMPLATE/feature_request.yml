@@ -1,0 +1,39 @@
+name: ✨ Feature request
+description: Una mejora o caso de uso nuevo
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué problema resuelve?
+      description: El "para qué". Si no es obvio, da ejemplo concreto.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta
+      description: ¿Cómo se vería? (mock, descripción del comportamiento, ejemplo de input/output…)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Ámbito
+      options:
+        - Motor (cálculo IRPF)
+        - Parser (más bancos / formatos)
+        - UI / UX
+        - Export Excel
+        - PWA / offline
+        - Otro
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas que has considerado
