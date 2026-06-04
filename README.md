@@ -1,4 +1,4 @@
-# Stocks Portfolio Report · Informes de IRPF de cartera
+# Análisis de operaciones de cartera de valores · Informes de IRPF
 
 [![CI](https://github.com/eaceto/stocks-portfolio-report/actions/workflows/ci.yml/badge.svg)](https://github.com/eaceto/stocks-portfolio-report/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-11876c.svg)](./LICENSE)
@@ -11,7 +11,7 @@
 
 Aplicación web (PWA) que genera los informes necesarios para la **declaración de IRPF** a partir de un extracto de operaciones de una cartera de valores. Para **cada año** del archivo y **cada cuenta** calcula ventas con **FIFO** (ganancia/pérdida), dividendos, gastos de custodia y posiciones a la fecha, con la trazabilidad completa de cada venta (primera y última fecha de adquisición, nº de lotes consumidos), aplica la **regla de los 2 meses** (art. 33.5.f) y la **compensación de pérdidas entre ejercicios** (art. 49, hasta 4 años).
 
-![Stocks Portfolio Report — vista del informe](docs/screenshot_tests.png)
+![Análisis de operaciones de cartera de valores — vista del informe](docs/screenshot_tests.png)
 
 - 📄 Lógica de cálculo detallada: [`docs/LOGICA_DE_NEGOCIO.md`](./docs/LOGICA_DE_NEGOCIO.md)
 - 🔐 Política de seguridad: [`SECURITY.md`](./SECURITY.md)

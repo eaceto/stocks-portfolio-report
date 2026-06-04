@@ -1260,14 +1260,19 @@ tr.total td {
   position: fixed;
   inset: 0;
   z-index: 100;
-  display: grid;
-  place-items: center;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  /* `safe start` keeps the card top-aligned when it overflows the viewport
+     (mobile / small screens). On taller viewports the padding gives breathing
+     room so it looks vertically centered enough. */
+  align-items: safe flex-start;
+  padding: max(20px, 5vh) 20px 24px;
   background: rgba(13, 17, 23, 0.55);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   animation: welcome-fade 0.25s ease-out;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 @keyframes welcome-fade {
   from { opacity: 0; }
@@ -1285,8 +1290,8 @@ tr.total td {
   padding: 32px 36px 28px;
   position: relative;
   animation: welcome-rise 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  max-height: 92vh;
-  overflow-y: auto;
+  /* No internal max-height/overflow — the overlay handles scroll so the
+     title is always reachable by scrolling up. */
 }
 @keyframes welcome-rise {
   from { transform: translateY(10px); opacity: 0; }

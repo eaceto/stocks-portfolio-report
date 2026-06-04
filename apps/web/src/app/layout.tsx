@@ -35,7 +35,9 @@ const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://stocks-portfolio-spain.vercel.app");
 
-const SHARED_TITLE = "Stocks Portfolio Report · Informes de IRPF";
+const APP_NAME = "Análisis de operaciones de cartera de valores";
+const APP_NAME_SHORT = "Análisis de cartera";
+const SHARED_TITLE = `${APP_NAME} · IRPF`;
 const SHARED_DESCRIPTION =
   "Genera los informes de IRPF (ventas con FIFO, dividendos, gastos y posiciones) a partir de un extracto de operaciones. Todo el cálculo ocurre en tu navegador: sin cuentas, sin cookies, sin historial.";
 
@@ -43,11 +45,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SHARED_TITLE,
-    template: "%s · Stocks Portfolio Report",
+    template: `%s · ${APP_NAME}`,
   },
   description: SHARED_DESCRIPTION,
   manifest: "/manifest.webmanifest",
-  applicationName: "Stocks Portfolio Report",
+  applicationName: APP_NAME,
   authors: [{ name: "Ezequiel Aceto", url: "https://linkedin.com/in/ezequielaceto" }],
   creator: "Ezequiel Aceto",
   publisher: "Ezequiel Aceto",
@@ -61,13 +63,13 @@ export const metadata: Metadata = {
     "dividendos",
     "PWA",
   ],
-  appleWebApp: { capable: true, statusBarStyle: "default", title: "Stocks Portfolio Report" },
+  appleWebApp: { capable: true, statusBarStyle: "default", title: APP_NAME_SHORT },
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "es_ES",
     url: "/",
-    siteName: "Stocks Portfolio Report",
+    siteName: APP_NAME,
     title: SHARED_TITLE,
     description: SHARED_DESCRIPTION,
     images: [
@@ -75,7 +77,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Stocks Portfolio Report — Informes de IRPF de tu cartera",
+        alt: `${APP_NAME} — Informes de IRPF de tu cartera`,
         type: "image/png",
       },
     ],

@@ -1,6 +1,6 @@
 {
-  "name": "Stocks Portfolio Report",
-  "short_name": "Portfolio Report",
+  "name": "Análisis de operaciones de cartera de valores",
+  "short_name": "Análisis cartera",
   "description": "Informes de IRPF de tu cartera (ventas FIFO, dividendos, gastos y posiciones). Cálculo 100% local.",
   "start_url": "/",
   "scope": "/",

@@ -68,7 +68,7 @@ export function WelcomeModal() {
         <div className="welcome-head">
           <div className="welcome-kicker">Bienvenido</div>
           <h2 id="welcome-title" className="welcome-title display">
-            Stocks Portfolio <em>Report</em>
+            Análisis de operaciones de <em>cartera de valores</em>
           </h2>
         </div>
 

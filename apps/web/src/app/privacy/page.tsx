@@ -4,19 +4,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacidad y aviso legal",
   description:
-    "Política de privacidad y aviso legal de Stocks Portfolio Report. Aplicación 100% local: sin servidor, sin cuentas, sin cookies, sin seguimiento.",
+    "Política de privacidad y aviso legal del análisis de operaciones de cartera de valores. Aplicación 100% local: sin servidor, sin cuentas, sin cookies, sin seguimiento.",
   alternates: { canonical: "/privacy" },
   openGraph: {
     type: "article",
     url: "/privacy",
-    title: "Privacidad y aviso legal · Stocks Portfolio Report",
+    title: "Privacidad y aviso legal · Análisis de operaciones de cartera de valores",
     description:
       "Política de privacidad y aviso legal: 100% local, sin servidor, sin asesoramiento fiscal vinculante, sin vínculo con la AEAT.",
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacidad y aviso legal · Stocks Portfolio Report",
+    title: "Privacidad y aviso legal · Análisis de operaciones de cartera de valores",
     description:
       "Política de privacidad y aviso legal: 100% local, sin servidor, sin asesoramiento fiscal vinculante.",
     images: ["/og.png"],
@@ -40,7 +40,7 @@ export default function PrivacyPage() {
       <section className="legal-section">
         <h2>1 · Privacidad — 100 % en tu navegador</h2>
         <p>
-          <strong>Stocks Portfolio Report no envía nada a ningún servidor.</strong> El archivo que
+          <strong>Esta aplicación no envía nada a ningún servidor.</strong> El archivo que
           subes se lee y procesa <em>localmente</em> en el navegador (en un Web Worker, con
           <em> fallback</em> al hilo principal). La aplicación se distribuye como un export
           estático: no hay backend capaz de recibir, almacenar o reenviar tus datos.
