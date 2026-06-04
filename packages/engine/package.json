@@ -1,0 +1,49 @@
+{
+  "name": "@stocks-portfolio-irpf/engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motor puro de cálculo IRPF (parser de extractos, FIFO, dividendos, custodia, posiciones, regla de los 2 meses, compensación de pérdidas 4 años).",
+  "keywords": ["irpf", "fifo", "stocks", "portfolio", "spain", "tax", "engine"],
+  "license": "MIT",
+  "author": {
+    "name": "Ezequiel Aceto",
+    "email": "ezequiel.aceto@gmail.com",
+    "url": "https://linkedin.com/in/ezequielaceto"
+  },
+  "homepage": "https://github.com/eaceto/stocks-portfolio-report/tree/main/packages/engine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaceto/stocks-portfolio-report.git",
+    "directory": "packages/engine"
+  },
+  "bugs": {
+    "url": "https://github.com/eaceto/stocks-portfolio-report/issues"
+  },
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts",
+    "./parse": "./src/parse.ts",
+    "./fifo": "./src/fifo.ts",
+    "./export-xlsx": "./src/export-xlsx.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "verify": "tsx scripts/verify.ts"
+  },
+  "dependencies": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@vitest/coverage-v8": "^4.1.8",
+    "tsx": "4.22.4",
+    "typescript": "5.9.3",
+    "vitest": "^4.1.8"
+  }
+}

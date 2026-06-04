@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔐 Reporte de seguridad
+    url: https://github.com/eaceto/stocks-portfolio-report/security/advisories/new
+    about: Para fallos de seguridad, abre un advisory privado (no un issue público).
+  - name: ❓ Pregunta general
+    url: https://github.com/eaceto/stocks-portfolio-report/discussions
+    about: Para dudas sobre IRPF/FIFO o cómo usar la app, usa Discussions.

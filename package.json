@@ -1,0 +1,47 @@
+{
+  "name": "stocks-portfolio-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motor de análisis de cartera de valores y cálculos para IRPF (FIFO, regla 2 meses, compensación de pérdidas, dividendos). App web (PWA), 100% local — sin cuentas ni cookies.",
+  "keywords": [
+    "irpf",
+    "fifo",
+    "stocks",
+    "portfolio",
+    "spain",
+    "tax",
+    "pwa",
+    "nextjs"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Ezequiel Aceto",
+    "email": "ezequiel.aceto@gmail.com",
+    "url": "https://linkedin.com/in/ezequielaceto"
+  },
+  "homepage": "https://github.com/eaceto/stocks-portfolio-report#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaceto/stocks-portfolio-report.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eaceto/stocks-portfolio-report/issues"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "overrides": {
+    "postcss": "^8.5.10"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspace apps/web",
+    "start": "npm run start --workspace apps/web",
+    "test": "npm run test --workspace packages/engine",
+    "test:watch": "npm run test:watch --workspace packages/engine",
+    "coverage": "npm run coverage --workspace packages/engine",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "verify:engine": "npm run verify --workspace packages/engine"
+  }
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Open Graph / Twitter card image, 1200×630.
+  Title + tagline on the left, the app icon on the right, on the same teal
+  gradient as the in-app accent. Used by Twitter, LinkedIn, Slack, Telegram,
+  WhatsApp, Discord, etc. for link previews.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Stocks Portfolio Report — Informes de IRPF de tu cartera">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d6b56"/>
+      <stop offset="100%" stop-color="#2eb39a"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#11876c"/>
+      <stop offset="100%" stop-color="#0d6b56"/>
+    </linearGradient>
+    <linearGradient id="topGloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="iconCardClip">
+      <rect x="780" y="160" width="320" height="280" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="260" fill="url(#topGloss)"/>
+
+  <!-- Title block (left) -->
+  <text x="92" y="186"
+        font-family="Georgia, 'Fraunces', serif"
+        font-size="22" letter-spacing="6" fill="#cdebe1" font-weight="400">
+    CARTERA · DECLARACIÓN DE LA RENTA
+  </text>
+  <text x="92" y="288"
+        font-family="Georgia, 'Fraunces', serif"
+        font-size="78" font-weight="500" fill="#ffffff">
+    Stocks Portfolio
+  </text>
+  <text x="92" y="370"
+        font-family="Georgia, 'Fraunces', serif"
+        font-size="78" font-style="italic" fill="#a5e8d3">
+    Report
+  </text>
+
+  <text x="92" y="440"
+        font-family="-apple-system, 'Hanken Grotesk', sans-serif"
+        font-size="26" fill="#e2f1ec">
+    Informes de IRPF · ventas FIFO · regla 2 meses
+  </text>
+  <text x="92" y="476"
+        font-family="-apple-system, 'Hanken Grotesk', sans-serif"
+        font-size="26" fill="#e2f1ec">
+    compensación de pérdidas · dividendos
+  </text>
+
+  <!-- Privacy pill -->
+  <rect x="92" y="514" width="380" height="46" rx="23"
+        fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.30)" stroke-width="1.2"/>
+  <text x="282" y="544"
+        font-family="-apple-system, 'Hanken Grotesk', sans-serif"
+        font-size="18" fill="#ffffff" text-anchor="middle">
+    🔒  100% en el navegador · sin cuentas · sin cookies
+  </text>
+
+  <!-- Icon card (right) — mini version of the app icon -->
+  <g clip-path="url(#iconCardClip)">
+    <rect x="780" y="160" width="320" height="280" fill="#fbf8f1"/>
+    <rect x="780" y="160" width="320" height="46" fill="url(#hdr)"/>
+
+    <!-- Header bars -->
+    <rect x="804" y="178" width="50" height="8" rx="4" fill="#ffffff" opacity="0.92"/>
+    <rect x="868" y="178" width="32" height="8" rx="4" fill="#ffffff" opacity="0.72"/>
+    <rect x="916" y="178" width="38" height="8" rx="4" fill="#ffffff" opacity="0.72"/>
+    <rect x="990" y="178" width="50" height="8" rx="4" fill="#ffffff" opacity="0.92"/>
+
+    <!-- Row separators -->
+    <line x1="792" y1="232" x2="1088" y2="232" stroke="#e6dfd1"/>
+    <line x1="792" y1="272" x2="1088" y2="272" stroke="#e6dfd1"/>
+    <line x1="792" y1="312" x2="1088" y2="312" stroke="#e6dfd1"/>
+    <line x1="792" y1="352" x2="1088" y2="352" stroke="#e6dfd1"/>
+
+    <!-- Rows -->
+    <rect x="804" y="216" width="64" height="12" rx="3" fill="#15181d"/>
+    <rect x="868" y="218" width="32" height="8" rx="3" fill="#5a626d"/>
+    <rect x="916" y="218" width="40" height="8" rx="3" fill="#5a626d"/>
+    <rect x="990" y="216" width="50" height="12" rx="3" fill="#11876c"/>
+
+    <rect x="804" y="256" width="54" height="12" rx="3" fill="#15181d"/>
+    <rect x="868" y="258" width="28" height="8" rx="3" fill="#5a626d"/>
+    <rect x="916" y="258" width="36" height="8" rx="3" fill="#5a626d"/>
+    <rect x="996" y="256" width="44" height="12" rx="3" fill="#c0382a"/>
+
+    <rect x="804" y="296" width="72" height="12" rx="3" fill="#15181d"/>
+    <rect x="868" y="298" width="34" height="8" rx="3" fill="#5a626d"/>
+    <rect x="916" y="298" width="38" height="8" rx="3" fill="#5a626d"/>
+    <rect x="990" y="296" width="46" height="12" rx="3" fill="#11876c"/>
+
+    <rect x="804" y="336" width="60" height="12" rx="3" fill="#15181d"/>
+    <rect x="868" y="338" width="30" height="8" rx="3" fill="#5a626d"/>
+    <rect x="916" y="338" width="42" height="8" rx="3" fill="#5a626d"/>
+    <rect x="990" y="336" width="46" height="12" rx="3" fill="#11876c"/>
+
+    <!-- Total band -->
+    <rect x="780" y="378" width="320" height="62" fill="#eef6f3"/>
+    <rect x="804" y="396" width="44" height="14" rx="3" fill="#15181d"/>
+    <rect x="970" y="394" width="74" height="18" rx="4" fill="url(#hdr)"/>
+  </g>
+
+  <!-- Bottom byline -->
+  <text x="92" y="600"
+        font-family="-apple-system, 'Hanken Grotesk', sans-serif"
+        font-size="16" fill="rgba(255,255,255,0.55)">
+    github.com/eaceto/stocks-portfolio-report  ·  por Ezequiel Aceto
+  </text>
+</svg>
