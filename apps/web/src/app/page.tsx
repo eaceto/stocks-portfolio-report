@@ -543,8 +543,9 @@ function Disclaimer() {
     <>
       <div className="disclaimer">
         <strong>Privacidad.</strong> Todo el cálculo ocurre en tu dispositivo. El archivo no se
-        envía a ningún servidor, no se guarda historial y no se usan cookies ni seguimiento. Al
-        recargar la página se borra todo.
+        envía a ningún servidor y no se almacenan tus datos ni operaciones. Vercel Speed Insights
+        mide los Core Web Vitals (anónimo, sin cookies, sin tracking de visitas); nunca contiene
+        ningún dato del archivo subido. Al recargar la página se borra todo el estado local.
         <br />
         <br />
         <strong>Aviso.</strong> Esta herramienta realiza cálculos de apoyo, <strong>no es

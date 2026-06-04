@@ -1,5 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+// Speed Insights only — pure technical performance telemetry (Core Web
+// Vitals). Uses the framework-agnostic `/react` entry because our deploy has
+// `framework: null` in vercel.json (treated as static, not Next.js). The SDK
+// injects a <script> tag pointing to /_vercel/speed-insights/script.js, a
+// first-party path served by Vercel's edge.
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./globals.css";
 
 // Fonts self-hosted from src/fonts so the app makes ZERO requests to Google
@@ -135,6 +141,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        {/*
+          Vercel Speed Insights — anonymous, cookie-less Core Web Vitals
+          telemetry beaconed to a first-party path (/_vercel/speed-insights/*)
+          served by the Vercel edge. No user IDs, no uploaded file content,
+          no operations. Mounted AFTER {children} so it doesn't add to first
+          paint. Disclosure: /privacy § 1.
+        */}
+        <SpeedInsights />
         <script dangerouslySetInnerHTML={{ __html: swScript }} />
       </body>
     </html>

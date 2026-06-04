@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@stocks-portfolio-irpf/engine": "*",
+    "@vercel/speed-insights": "^2.0.0",
     "next": "15.5.19",
     "react": "19.2.7",
     "react-dom": "19.2.7"

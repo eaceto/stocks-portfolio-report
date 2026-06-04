@@ -23,8 +23,9 @@ Aplicación web (PWA) que genera los informes necesarios para la **declaración 
 ## Privacidad
 
 - **100% en el navegador.** El archivo nunca se sube a ningún servidor: se lee y procesa localmente (en un Web Worker, con _fallback_ al hilo principal).
-- **Sin cuentas, sin cookies, sin seguimiento, sin historial.** Es un export estático: no hay backend que pueda ver los datos. Al recargar la página se borra todo.
+- **Sin cuentas, sin cookies de seguimiento, sin perfilado.** Es un export estático: no hay backend que pueda ver, almacenar o reenviar tus datos. Al recargar la página se borra todo el estado local.
 - **Sin IA.** El cálculo es determinista (parseo + FIFO en TypeScript).
+- **Métricas técnicas de rendimiento** (Vercel Speed Insights) en la versión desplegada: Core Web Vitals (LCP, INP, CLS, FCP, TTFB), clase de dispositivo y país. **Sin cookies, sin tracking de visitas, sin perfilado.** Nunca contiene el archivo, las operaciones ni identificadores personales. Detalle en [`/privacy`](./apps/web/src/app/privacy/page.tsx).
 
 ---
 

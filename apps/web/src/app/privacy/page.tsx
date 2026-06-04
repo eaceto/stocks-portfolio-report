@@ -51,13 +51,14 @@ export default function PrivacyPage() {
             asocie operaciones a una identidad.
           </li>
           <li>
-            <strong>Sin cookies de seguimiento ni analítica.</strong> El sitio no carga scripts de
-            terceros con propósitos publicitarios o de telemetría.
+            <strong>Sin cookies de seguimiento ni publicidad.</strong> El sitio no instala cookies
+            en tu navegador, no se hace perfilado ni se construye un historial de uso por usuario,
+            y no se cargan scripts de terceros con propósitos publicitarios.
           </li>
           <li>
-            <strong>Sin almacenamiento persistente.</strong> Al recargar la página se borra todo: el
-            archivo subido, los resultados calculados y cualquier configuración. La PWA puede
-            guardar en caché los <em>assets</em> estáticos (HTML, JS, CSS, fuentes) para
+            <strong>Sin almacenamiento persistente de tus datos.</strong> Al recargar la página se
+            borra todo: el archivo subido, los resultados calculados y cualquier configuración. La
+            PWA puede guardar en caché los <em>assets</em> estáticos (HTML, JS, CSS, fuentes) para
             funcionamiento offline, pero <strong>nunca</strong> tu archivo ni los cálculos.
           </li>
           <li>
@@ -68,6 +69,24 @@ export default function PrivacyPage() {
             <strong>Fuentes auto-hospedadas.</strong> Las tipografías (Fraunces, Hanken Grotesk,
             IBM Plex Mono) se sirven desde el propio dominio. No hay llamadas a Google Fonts ni a
             ningún CDN externo en tiempo de ejecución.
+          </li>
+          <li>
+            <strong>Métricas técnicas de rendimiento (Vercel Speed Insights).</strong> La versión
+            desplegada en Vercel mide los Core Web Vitals — tiempos de pintado (LCP, FCP),
+            interactividad (INP), estabilidad visual (CLS) y tiempo hasta el primer byte (TTFB) —
+            junto a la clase de dispositivo y país. El envío es <strong>anónimo</strong>,{" "}
+            <strong>sin cookies</strong>, sin identificadores que permitan asociar las mediciones
+            a una persona concreta y <strong>NUNCA</strong> contiene el archivo subido, las
+            operaciones ni los importes. Los procesa Vercel (
+            <a
+              href="https://vercel.com/docs/speed-insights/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              política de Speed Insights
+            </a>
+            ) para diagnosticar cuellos de botella de rendimiento. No se hace tracking de visitas
+            ni de eventos de uso (no se usa Vercel Analytics).
           </li>
         </ul>
       </section>
